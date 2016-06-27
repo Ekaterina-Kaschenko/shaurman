@@ -4,7 +4,7 @@
 }
  
 .ba-slider img {
-    width: 100%;
+    width: 100% !important;
     display:block;
 }
  
@@ -25,7 +25,7 @@
   bottom:0;
   width:4px;
   margin-left:-2px;
- 
+  z-index: 100;
   background: rgba(0,0,0,.5);
   cursor: ew-resize;
 }
@@ -191,3 +191,31 @@ input[type="email"] {
   text-align: right;
   width: 100%;
 }
+
+/* blue */
+
+.blue {
+  background: url(../images/blue-bg.png) no-repeat center top;
+  padding-top: 4em;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.link-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5b0f02;
+  color: #fff;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
